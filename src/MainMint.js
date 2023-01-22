@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { ethers, BigNumber } from "ethers";
 import { Box, Button, Flex, Input, Text } from "@chakra-ui/react";
-import roboPunksNFT from "./RoboPunksNFT.json";
+import infinitilearningdao from "./Infinitilearningdao.json";
 
-const roboPunksNFTAddress = "0x35e4323c5c0A36972F629162182ade45435B4c12";
+//使用Plogyan 来替代，准备一个新的智能合约
+
+//定义合约地址
+const infinitilearningdaoAddress = "0xa16654d69bf71a6836effded25f0d98eb4e1bc96";
 
 const MaintMint = ({ accounts, setAccounts }) => {
   const [mintAmount, setMintAmount] = useState(1);
@@ -14,8 +17,8 @@ const MaintMint = ({ accounts, setAccounts }) => {
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = provider.getSigner();
       const contract = new ethers.Contract(
-        roboPunksNFTAddress,
-        roboPunksNFT.abi,
+        infinitilearningdaoAddress,
+        infinitilearningdao.abi,
         signer
       );
       try {
@@ -43,8 +46,8 @@ const MaintMint = ({ accounts, setAccounts }) => {
     <Flex justify="center" align="center" height="100vh" paddingBottom="150px">
       <Box width="520px">
         <div>
-          <Text fontSize="48px" textShadow="0 5px #000000">
-            The God of Glace...
+          <Text fontSize="24px" textShadow="0 5px #000000">
+          Infiniti Learning DAO
           </Text>
           <Text
             fontSize="30px"
@@ -52,8 +55,7 @@ const MaintMint = ({ accounts, setAccounts }) => {
             fontFamily="VT323"
             textShadow="0 2px 2px #000000"
           >
-            This website is for Test Only----
-            韩总。。。。
+            New way for Learning
           </Text>
         </div>
 
@@ -126,7 +128,7 @@ const MaintMint = ({ accounts, setAccounts }) => {
             textShadow="0 3px #000000"
             color="#008fd4"
           >
-            Connect your wallet to mint.
+            Connect your wallet to mint on Polygon.
           </Text>
         )}
       </Box>

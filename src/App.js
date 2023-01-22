@@ -4,6 +4,7 @@ import MainMint from './MainMint';
 import NavBar from './NavBar';
 
 
+
 function App() {
   const [accounts, setAccounts] = useState([]);
 
@@ -14,10 +15,14 @@ function App() {
   <div className="App">
     <NavBar accounts={accounts} setAccounts={setAccounts} />
     <MainMint accounts={accounts} setAccounts={setAccounts} />
+   
+    
 </div>
 <div className="moving-background"> </div>
 
 </div>
+
+
 
   </div>);
 }

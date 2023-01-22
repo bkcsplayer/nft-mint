@@ -36,12 +36,12 @@ const NavBar = ({accounts, setAccounts}) => {
             
             {/*Right Side - Sections and Connect*/}
             <Flex justify="space-between" align="center" padding="30px">
-            <Box margin="0 15px">About</Box>
+            {/* <Box margin="0 15px">About</Box>
             <Spacer />
-            <Box margin="0 15px">Mint</Box>
+            <Box margin="0 15px">RoadMap</Box>
             <Spacer />      
             <Box margin="0 15px">Team</Box>
-            <Spacer />
+            <Spacer /> */}
       
 
             {/*Connect*/}
